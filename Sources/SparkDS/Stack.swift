@@ -33,13 +33,13 @@ public struct Stack<Element> {
     }
 }
 
-public extension Stack: ExpressibleByArrayLiteral {
+extension Stack: ExpressibleByArrayLiteral {
     public init(arrayLiteral elements: Element...) {
         storage = elements
     }
 }
 
-public extension Stack: CustomStringConvertible {
+extension Stack: CustomStringConvertible {
     public var description: String {
         """
         ----top----
